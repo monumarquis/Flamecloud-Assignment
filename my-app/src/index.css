@@ -6,3 +6,9 @@ body {
 * {
   font-family: 'Figtree', sans-serif;
 }
+
+
+.background {
+  bbackground: rgb(0,182,122);
+  background: linear-gradient(90deg, rgba(0,182,122,1) 0%, rgba(0,182,122,1) 54%, rgba(220,220,230,1) 54%, rgba(220,220,230,1) 100%);
+}
