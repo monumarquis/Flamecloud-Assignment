@@ -31,9 +31,9 @@ const LandingTopSection = () => {
                         <IoIosStar color="#fff" />
                     </Flex>
                 </Flex>
-                <Flex flexDir={"row"} alignItems="center" mt="3px" >
+                <Flex flexDir={"row"} alignItems="center" justifyContent={'center'} mt="6px" >
                     <Text fontWeight={"600"} fontSize="16px" color={"#111822"} mr="5px" >Rated 4.5 on</Text>
-                    <IoIosStar color="#005128" ml="2px" />
+                    <IoIosStar color="#00B67A" ml="2px" fontSize={"22px"}  />
                     <Text fontWeight={"600"} ml="2px" fontSize="16px" color={"#111822"} mr="5px" >Trustpilot</Text>
                 </Flex>
             </Flex>
