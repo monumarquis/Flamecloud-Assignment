@@ -4,7 +4,7 @@ import { IoIosStar } from 'react-icons/io'
 
 const LandingTopSection = () => {
     return (
-        <Flex mt="40px" flexDir={"column"} w={["100%", "100%", "85%", "75%", "70%"]} m="auto" pt="95px" justifyContent="center" px={["8", '8', "8", "8", "8"]} >
+        <Flex mt="40px" flexDir={"column"} w={["100%", "100%", "85%", "75%", "70%"]} m="auto" pt="95px" justifyContent="center" px={["5", '5', "8", "8", "8"]} >
             <Text fontWeight={"600"} fontSize={["16px", "16px", "16px", "16px", "16px"]} color={"#888c91"} textAlign={"center"} >WELCOME TO CREATIVE PROXIES</Text>
             <Text fontWeight={"600"} mb="20px" fontSize={["33px", "3px", "46px", "56px", "56px"]} lineHeight={["47.2px", "47.2px", "57.2px", "67.2px", "67.2px"]} textAlign={"center"} >We are the <span style={{ color: "#077BFF" }} >Fastest</span> and the <span style={{ color: "#16D113" }} >Most
                 Reliable</span> Proxy Service since 2020</Text>

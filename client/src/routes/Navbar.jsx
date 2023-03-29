@@ -12,7 +12,7 @@ const Navbar = () => {
     }
     return (
         <Flex w="100%" >
-            <Flex w={"100%"} px={["8", '8', "8", "8", "8"]} m="auto" flexDir={"row"} alignItems="center" justifyContent={"space-between"} borderBottom="1px solid #D9D8D6" py="20px" >
+            <Flex w={"100%"} px={["5", '5', "8", "8", "8"]} m="auto" flexDir={"row"} alignItems="center" justifyContent={"space-between"} borderBottom="1px solid #D9D8D6" py="20px" >
                 {/* Ist Portion */}
                 <Flex flexDir={"row"} onClick={() => handleNavigation("")} cursor="pointer" >
                     <Image src={Logo} alt="Logo" mr="7.2px" />
