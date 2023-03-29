@@ -1,4 +1,4 @@
-import { Avatar, Flex, Image, SimpleGrid, Text } from '@chakra-ui/react'
+import { Avatar, Flex, Image, SimpleGrid, Text, Icon } from '@chakra-ui/react'
 import { RiArrowRightLine } from 'react-icons/ri'
 import lock from '../assets/lock.svg'
 import box from '../assets/3square.svg'
@@ -65,7 +65,7 @@ const LandingPage = () => {
             {/* Pricing section */}
             <Flex flexDir={"column"} w={["100%", "100%", "90%", "70%", "57%"]} m="auto" py={["201px", "201px", "177px", "177px", "177px", "177px"]} >
                 <Text color="#111822" mb="10px" fontWeight={"600"} textAlign="center" fontSize={["32px", "32px", "36px", "36px", "36px"]} lineHeight={["23.2px", "24.2px", "43.2px", "43.2px", "43.2px"]} >You choose, we <span style={{ color: "#077BFF" }} >Deliver!</span></Text>
-                <Text color="#111822" opacity="0.5" fontWeight={"500"} w={["88%", "88%", "70%", "62%", "62%"]} textAlign="center" fontSize={["15px", "15px", "18px", "18px", "18px"]} m="auto" lineHeight={"21.2px"} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
+                <Text color="#111822" opacity="0.5" fontWeight={"500"} w={["85%", "85%", "70%", "62%", "62%"]} textAlign="center" fontSize={["15px", "15px", "18px", "18px", "18px"]} m="auto" lineHeight={"21.2px"} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
                 <Flex flexDir={["column", "column", "row", "row", "row"]} w="100%" alignItems={"stretch"} justifyContent={"space-between"} mt="99px" >
                     {/* Ist Pricing */}
                     <Flex flexDirection={"column"} w={["70%", "70%", "49%", "49%", "49%"]} m="auto" mb={["50px", "50px", "0px", "0px", "0px"]} mt={["0px", "0px", "0px", "0px", "0px"]} h="477px" p={["18px", "18px", "27px", "27px", "27px"]} bg="rgba(30, 30, 30, 0.01)" border="1px solid rgba(30, 30, 30, 0.1)" borderRadius={"5px"} >
@@ -211,33 +211,33 @@ const LandingPage = () => {
             </Flex>
             {/* Customer love section */}
             <Flex flexDir={"column"} w="100%" px={["9", '9', "9", "9", "9"]} mb="250px" >
-                <Text color="#111822" mb="10px" fontWeight={"600"} textAlign="center" fontSize={["32px", "32px", "36px", "36px", "36px"]} lineHeight={["23.2px", "24.2px", "43.2px", "43.2px", "43.2px"]} >Customers <span style={{ color: "#16D113" }} >Love</span> our Proxies</Text>
-                <Text color="#111822" opacity="0.5" fontWeight={"500"} w={["88%", "88%", "70%", "50%", "40%"]} textAlign="center" fontSize={["15px", "15px", "18px", "18px", "18px"]} m="auto" lineHeight={"21.2px"} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
-                <Flex mt="34px" flexDir={["column", "column", "row", "row", "row"]} justifyContent="space-between"  >
+                <Text color="#111822" mb="10px" fontWeight={"600"} textAlign="center" fontSize={["27px", "27px", "36px", "36px", "36px"]} lineHeight={["32.2px", "32.2px", "43.2px", "43.2px", "43.2px"]} >Customers <span style={{ color: "#16D113" }} >Love</span> our Proxies</Text>
+                <Text color="#111822" opacity="0.5" fontWeight={"500"} w={["98%", "98%", "70%", "50%", "40%"]} textAlign="center" fontSize={["15px", "15px", "18px", "18px", "18px"]} m="auto" lineHeight={["15.2px", "15.2px", "21.2px", "21.2px", "21.2px"]} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
+                <SimpleGrid mt="34px" columns={[1, 1, 2, 2, 3]} spacing={["28px", "28px", "10px", "18px", "18px"]}  >
                     {
                         customerlove.map((el) => {
                             return (
-                                <Flex flexDir={"column"} w="32%" py='28px' px="25.8px" background={"rgba(30, 30, 30, 0.01)"} borderRadius="5px" border="1px solid rgba(22, 209, 19, 0.5)" >
+                                <Flex flexDir={"column"} py='28px' px={["15.8px", "15.8px", "25.8px", "25.8px", "25.8px"]} background={"rgba(30, 30, 30, 0.01)"} borderRadius="5px" border="1px solid rgba(22, 209, 19, 0.5)" >
                                     <Flex mb="19.1px" flexDir={"row"} w="25%" justifyContent={"space-between"} >
-                                        <IoIosStar w="24%" color="#16D113" />
-                                        <IoIosStar w="24%" color="#16D113" />
-                                        <IoIosStar w="24%" color="#16D113" />
-                                        <IoIosStar w="24%" color="#16D113" />
-                                        <IoIosStar w="24%" color="#16D113" />
+                                        <Icon as={IoIosStar} boxSize={6} color="#16D113" />
+                                        <Icon as={IoIosStar} boxSize={6} color="#16D113" />
+                                        <Icon as={IoIosStar} boxSize={6} color="#16D113" />
+                                        <Icon as={IoIosStar} boxSize={6} color="#16D113" />
+                                        <Icon as={IoIosStar} boxSize={6} color="#16D113" />
                                     </Flex>
-                                    <Text color="#111822" textAlign={"left"} fontWeight={"400"} opacity="0.8" letterSpacing={"-0.02em"} fontSize={["18px", "18px", "18px", "18px", "18px"]} w="335px" lineHeight={["22px", "22px", "22px", "22px", "22px"]} mb="12px" >{el.desc}</Text>
+                                    <Text color="#111822" textAlign={"left"} fontWeight={"400"} opacity="0.8" letterSpacing={"-0.02em"} fontSize={["14px", "14px", "14px", "18px", "18px"]} w={["305px", "305px", "305px", "335px", "335px"]} lineHeight={["22px", "22px", "22px", "22px", "22px"]} mb="12px" >{el.desc}</Text>
                                     <Flex flexDir={"row"} alignItems="center" >
                                         <Avatar w="48px" h="48px" mr="10px" name={el.name} src={elipse} />
                                         <Flex flexDir={"column"} >
-                                            <Text color="#111822" fontWeight={"500"} fontSize={["18px", "18px", "18px", "18px", "18px"]} lineHeight={["22px", "22px", "22px", "22px", "22px"]}   >{el.name}</Text>
-                                            <Text color="#111822" opacity={"0.5"} fontWeight={"400"} fontSize={["16px", "16px", "16px", "16px", "16px"]} lineHeight={["19px", "19px", "19px", "19px", "19px"]}  >{el.title}</Text>
+                                            <Text color="#111822" fontWeight={"500"} fontSize={["16px", "16px", "18px", "18px", "18px"]} lineHeight={["22px", "22px", "22px", "22px", "22px"]}   >{el.name}</Text>
+                                            <Text color="#111822" opacity={"0.5"} fontWeight={"400"} fontSize={["14px", "14px", "16px", "16px", "16px"]} lineHeight={["19px", "19px", "19px", "19px", "19px"]}  >{el.title}</Text>
                                         </Flex>
                                     </Flex>
                                 </Flex>
                             )
                         })
                     }
-                </Flex>
+                </SimpleGrid>
             </Flex>
         </Flex>
     )
