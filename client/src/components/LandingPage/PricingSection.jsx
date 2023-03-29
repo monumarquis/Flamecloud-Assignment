@@ -4,14 +4,21 @@ import { BsCheckLg } from "react-icons/bs"
 import pricing1 from '../../assets/pricing/1.svg'
 import pricing2 from '../../assets/pricing/2.svg'
 import pricing3 from '../../assets/pricing/3.svg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
 const PricingSection = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return (
         <Flex flexDir={"column"} w={["100%", "100%", "90%", "70%", "57%"]} m="auto" py={["100px", "100px", "177px", "177px", "177px", "177px"]} >
-            <Text color="#111822" mb="10px" fontWeight={"600"} textAlign="center" fontSize={["32px", "32px", "36px", "36px", "36px"]} lineHeight={["23.2px", "24.2px", "43.2px", "43.2px", "43.2px"]} >You choose, we <span style={{ color: "#077BFF" }} >Deliver!</span></Text>
-            <Text color="#111822" opacity="0.5" fontWeight={"500"} w={["85%", "85%", "70%", "62%", "62%"]} textAlign="center" fontSize={["15px", "15px", "18px", "18px", "18px"]} m="auto" lineHeight={"21.2px"} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
+            <Text data-aos="flip-left" color="#111822" mb="10px" fontWeight={"600"} textAlign="center" fontSize={["32px", "32px", "36px", "36px", "36px"]} lineHeight={["23.2px", "24.2px", "43.2px", "43.2px", "43.2px"]} >You choose, we <span style={{ color: "#077BFF" }} >Deliver!</span></Text>
+            <Text data-aos="flip-left" color="#111822" opacity="0.5" fontWeight={"500"} w={["85%", "85%", "70%", "62%", "62%"]} textAlign="center" fontSize={["15px", "15px", "18px", "18px", "18px"]} m="auto" lineHeight={"21.2px"} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
             <Flex flexDir={["column", "column", "row", "row", "row"]} w="100%" alignItems={"stretch"} justifyContent={"space-between"} mt="99px" >
                 {/* Ist Pricing */}
-                <Flex flexDirection={"column"} w={["70%", "70%", "49%", "49%", "49%"]} m="auto" mb={["50px", "50px", "0px", "0px", "0px"]} mt={["0px", "0px", "0px", "0px", "0px"]} h="477px" p={["23px", "23px", "27px", "27px", "27px"]}  bg="rgba(30, 30, 30, 0.01)" border="1px solid rgba(30, 30, 30, 0.1)" borderRadius={"5px"} >
+                <Flex data-aos="zoom-in" data-aos-delay="100" flexDirection={"column"} w={["70%", "70%", "49%", "49%", "49%"]} m="auto" mb={["50px", "50px", "0px", "0px", "0px"]} mt={["0px", "0px", "0px", "0px", "0px"]} h="477px" p={["23px", "23px", "27px", "27px", "27px"]} bg="rgba(30, 30, 30, 0.01)" border="1px solid rgba(30, 30, 30, 0.1)" borderRadius={"5px"} >
                     {/* Top Section */}
                     <Flex flexDir={"row"} justifyContent="space-between" mb="20px" >
                         <Flex flexDir={"column"}  >
@@ -20,10 +27,10 @@ const PricingSection = () => {
                             <Text color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.5"} fontSize={["15px", "15px", "16px", "16px", "16px"]} lineHeight={"19px"} >Static/Rotating</Text>
                         </Flex>
                         <Flex flexDir={"column"}>
-                            <Text color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["12px", "12px", "16px", "16px", "16px"]} lineHeight={["15px","15px","19px","19px","19px"]} >FROM</Text>
-                            <Text fontWeight={"500"} mb="4px" textAlign="left" fontSize={["15px", "15px", "20px", "20px", "20px"]} color="#077BFF" lineHeight={["18px","18px","24px","24px","24px"]} >$4.75<span style={{ color: "#111822", opacity: "0.75" }} >/day</span></Text>
-                            <Text fontWeight={"600"} opacity="0.8" textAlign="left" fontSize={["10px", "10px", "12px", "12px", "12px"]} color="#111822" lineHeight={["10.4px","10.4px","14.4px","14.4px","14.4px"]} >OR</Text>
-                            <Text fontWeight={"500"} textAlign="left" fontSize={["15px", "15px", "20px", "20px", "20px"]} color="#077BFF" lineHeight={["18px","18px","24px","24px","24px"]} >$116.75<span style={{ color: "#111822", opacity: "0.75" }} >/mo</span></Text>
+                            <Text color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["12px", "12px", "16px", "16px", "16px"]} lineHeight={["15px", "15px", "19px", "19px", "19px"]} >FROM</Text>
+                            <Text fontWeight={"500"} mb="4px" textAlign="left" fontSize={["15px", "15px", "20px", "20px", "20px"]} color="#077BFF" lineHeight={["18px", "18px", "24px", "24px", "24px"]} >$4.75<span style={{ color: "#111822", opacity: "0.75" }} >/day</span></Text>
+                            <Text fontWeight={"600"} opacity="0.8" textAlign="left" fontSize={["10px", "10px", "12px", "12px", "12px"]} color="#111822" lineHeight={["10.4px", "10.4px", "14.4px", "14.4px", "14.4px"]} >OR</Text>
+                            <Text fontWeight={"500"} textAlign="left" fontSize={["15px", "15px", "20px", "20px", "20px"]} color="#077BFF" lineHeight={["18px", "18px", "24px", "24px", "24px"]} >$116.75<span style={{ color: "#111822", opacity: "0.75" }} >/mo</span></Text>
                         </Flex>
 
                     </Flex>
@@ -59,7 +66,7 @@ const PricingSection = () => {
                     </Flex>
                 </Flex>
                 {/* 2nd Pricing */}
-                <Flex pos="relative" flexDirection={"column"} w={["70%", "70%", "49%", "49%", "49%"]} m="auto" p={["23px", "23px", "27px", "27px", "27px"]} bg="rgba(22, 209, 19, 0.1)" h="525px" border="1px solid #16D113" borderRadius={"5px"} >
+                <Flex data-aos="zoom-in" data-aos-delay="200" pos="relative" flexDirection={"column"} w={["70%", "70%", "49%", "49%", "49%"]} m="auto" p={["23px", "23px", "27px", "27px", "27px"]} bg="rgba(22, 209, 19, 0.1)" h="525px" border="1px solid #16D113" borderRadius={"5px"} >
                     {/* Top Section */}
                     <Flex justifyContent={"center"} alignItems="center" color="#FFFFFF" py="2px" px="4px" bg="#16D113" borderRadius={"2px"} pos="absolute" top="-12px" fontSize="12px" left={["15px", "15px", "20px", "20px", "25px"]} >
                         BEST SELLER
@@ -71,10 +78,10 @@ const PricingSection = () => {
                             <Text color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.5"} fontSize={["15px", "15px", "16px", "16px", "16px"]} lineHeight={"19px"} >Static/Rotating</Text>
                         </Flex>
                         <Flex flexDir={"column"}>
-                            <Text color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["12px", "12px", "16px", "16px", "16px"]} lineHeight={["15px","15px","19px","19px","19px"]} >FROM</Text>
-                            <Text fontWeight={"500"} mb="4px" textAlign="left" fontSize={["15px", "15px", "20px", "20px", "20px"]} color="#16D113" lineHeight={["18px","18px","24px","24px","24px"]} >$4.75<span style={{ color: "#111822", opacity: "0.75" }} >/day</span></Text>
-                            <Text fontWeight={"600"} opacity="0.8" textAlign="left" fontSize={["10px", "10px", "12px", "12px", "12px"]} color="#111822" lineHeight={["10.4px","10.4px","14.4px","14.4px","14.4px"]} >OR</Text>
-                            <Text fontWeight={"500"} textAlign="left" fontSize={["15px", "15px", "20px", "20px", "20px"]} color="#16D113" lineHeight={["18px","18px","24px","24px","24px"]} >$116.75<span style={{ color: "#111822", opacity: "0.75" }} >/mo</span></Text>
+                            <Text color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["12px", "12px", "16px", "16px", "16px"]} lineHeight={["15px", "15px", "19px", "19px", "19px"]} >FROM</Text>
+                            <Text fontWeight={"500"} mb="4px" textAlign="left" fontSize={["15px", "15px", "20px", "20px", "20px"]} color="#16D113" lineHeight={["18px", "18px", "24px", "24px", "24px"]} >$4.75<span style={{ color: "#111822", opacity: "0.75" }} >/day</span></Text>
+                            <Text fontWeight={"600"} opacity="0.8" textAlign="left" fontSize={["10px", "10px", "12px", "12px", "12px"]} color="#111822" lineHeight={["10.4px", "10.4px", "14.4px", "14.4px", "14.4px"]} >OR</Text>
+                            <Text fontWeight={"500"} textAlign="left" fontSize={["15px", "15px", "20px", "20px", "20px"]} color="#16D113" lineHeight={["18px", "18px", "24px", "24px", "24px"]} >$116.75<span style={{ color: "#111822", opacity: "0.75" }} >/mo</span></Text>
                         </Flex>
 
                     </Flex>
@@ -119,7 +126,7 @@ const PricingSection = () => {
                 </Flex>
             </Flex>
             {/* Third Pricing */}
-            <Flex flexDir={"row"} justifyContent="space-between" w={["85%", "85%", "100%", "100%", "100%"]} m="auto" border="1px solid rgba(30, 30, 30, 0.1)" mt="22px" py="22px" pr={["12px", "12px", "123px", "123px", "123px"]} pl={["14px", "14px", "28px", "28px", "28px"]} borderRadius={"5px"} background={"rgba(30, 30, 30, 0.01)"}>
+            <Flex data-aos="zoom-in" data-aos-delay="300" flexDir={"row"} justifyContent="space-between" w={["85%", "85%", "100%", "100%", "100%"]} m="auto" border="1px solid rgba(30, 30, 30, 0.1)" mt="22px" py="22px" pr={["12px", "12px", "123px", "123px", "123px"]} pl={["14px", "14px", "28px", "28px", "28px"]} borderRadius={"5px"} background={"rgba(30, 30, 30, 0.01)"}>
                 <Flex flexDir={"column"} >
                     <Image src={pricing3} mb="8px" w="40px" h="40px" />
                     <Text color="#111822" mb="8px" fontWeight={"600"} textAlign="left" fontSize={["15px", "15px", "20px", "20px", "20px"]} lineHeight={"24px"} >Become a Reseller</Text>

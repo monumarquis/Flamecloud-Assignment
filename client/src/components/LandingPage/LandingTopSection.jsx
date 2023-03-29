@@ -2,11 +2,17 @@ import { Divider, Flex, Text } from '@chakra-ui/react'
 import { RiArrowRightLine } from 'react-icons/ri'
 import { IoIosStar } from 'react-icons/io'
 import { useNavigate } from 'react-router-dom'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const LandingTopSection = () => {
     const naviagte = useNavigate()
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return (
-        <Flex mt="40px" flexDir={"column"} w={["100%", "100%", "85%", "75%", "70%"]} m="auto" pt="95px" justifyContent="center" px={["5", '5', "9", "9", "9"]} >
+        <Flex data-aos="zoom-in-right" data-aos-delay="200" mt="40px" flexDir={"column"} w={["100%", "100%", "85%", "75%", "70%"]} m="auto" pt="95px" justifyContent="center" px={["5", '5', "9", "9", "9"]} >
             <Text fontWeight={"600"} fontSize={["16px", "16px", "16px", "16px", "16px"]} opacity="0.5" color={"#111822"} textAlign={"center"} >WELCOME TO CREATIVE PROXIES</Text>
             <Text fontWeight={"600"} mb="20px" color="#111822" fontSize={["33px", "33px", "46px", "56px", "56px"]} lineHeight={["47.2px", "47.2px", "57.2px", "67.2px", "67.2px"]} textAlign={"center"} >We are the <span style={{ color: "#077BFF" }} >Fastest</span> and the <span style={{ color: "#16D113" }} >Most
                 Reliable</span> Proxy Service since 2020</Text>
