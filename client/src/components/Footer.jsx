@@ -11,7 +11,7 @@ const Footer = () => {
     }
     return (
         <Flex w="100%"  >
-            <Flex w={"100%"} flexDir={["column", "column", "column", "row", "row"]} px={["5", '5', "8", "8", "8"]} py="40px" m="auto" borderTop="1px solid #D9D8D6">
+            <Flex w={"100%"} flexDir={["column", "column", "column", "row", "row"]} px={["5", '5', "9", "9", "9"]} py="40px" m="auto" borderTop="1px solid #D9D8D6">
                 {/* left side */}
                 <Flex flexDir={["row", "row", "row", "column", "column"]} w={["95%", "95%", "95%", "23%", "16%"]} mr={["300px", "300px", "300px", "160px", "300px"]} justifyContent="space-between" >
                     <Flex flexDir={"column"} w={["48%", "48%", "30%", "100%", "100%"]} >

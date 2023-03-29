@@ -1,4 +1,4 @@
-import { Avatar, Flex, Image, SimpleGrid, Text, Icon } from '@chakra-ui/react'
+import { Avatar, Flex, Image, SimpleGrid, Text, Icon, Box } from '@chakra-ui/react'
 import { RiArrowRightLine } from 'react-icons/ri'
 import lock from '../assets/lock.svg'
 import box from '../assets/3square.svg'
@@ -11,14 +11,16 @@ import elipse from '../assets/Ellipse.svg'
 import LandingTopSection from '../components/LandingTopSection'
 import { featureData, customerlove } from "../data.js"
 import { BsCheckLg } from "react-icons/bs"
+import { HiArrowNarrowRight } from "react-icons/hi"
 import { IoIosStar } from 'react-icons/io'
 
 const LandingPage = () => {
-
+    const blogArray = new Array(6).fill(0)
+    const blogArray2 = new Array(4).fill(0)
     return (
         <Flex w="100%" flexDir={"column"}  >
             <LandingTopSection />
-            <SimpleGrid columns={[2, 2, 2, 3, 4]} spacing={["12.6px", "12.6px", "16.6px", "16.6px", "16.6px"]} mb="138.6px" px={["8", '8', "8", "8", "8"]} >
+            <SimpleGrid columns={[2, 2, 2, 3, 4]} spacing={["12.6px", "12.6px", "16.6px", "16.6px", "16.6px"]} mb="138.6px" px={["9", '9', "9", "9", "9"]} >
                 <Flex py={["6px", "6px", "7px", "20px", "20px"]} bg="#EEFEFD" border={"1px solid #D4EAE8"} borderRadius="5px" justifyContent="center" alignItems="center"  >
                     <Flex py={["5px", "5px", "7px", "7px", "7px"]} w={["30px", "30px", "40px", "40px", "40px"]} background={"linear-gradient(135deg, #3BC9FB 0%, #42A6FB 100%)"} borderRadius="8px" justifyContent="center" alignItems={"center"}  >
                         <Image src={box} w={["55%", "55%", "70%", "70%", "70%"]} alt="" />
@@ -63,7 +65,7 @@ const LandingPage = () => {
                 </SimpleGrid>
             </Flex>
             {/* Pricing section */}
-            <Flex flexDir={"column"} w={["100%", "100%", "90%", "70%", "57%"]} m="auto" py={["201px", "201px", "177px", "177px", "177px", "177px"]} >
+            <Flex flexDir={"column"} w={["100%", "100%", "90%", "70%", "57%"]} m="auto" py={["100px", "100px", "177px", "177px", "177px", "177px"]} >
                 <Text color="#111822" mb="10px" fontWeight={"600"} textAlign="center" fontSize={["32px", "32px", "36px", "36px", "36px"]} lineHeight={["23.2px", "24.2px", "43.2px", "43.2px", "43.2px"]} >You choose, we <span style={{ color: "#077BFF" }} >Deliver!</span></Text>
                 <Text color="#111822" opacity="0.5" fontWeight={"500"} w={["85%", "85%", "70%", "62%", "62%"]} textAlign="center" fontSize={["15px", "15px", "18px", "18px", "18px"]} m="auto" lineHeight={"21.2px"} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
                 <Flex flexDir={["column", "column", "row", "row", "row"]} w="100%" alignItems={"stretch"} justifyContent={"space-between"} mt="99px" >
@@ -210,7 +212,7 @@ const LandingPage = () => {
                 </Flex>
             </Flex>
             {/* Customer love section */}
-            <Flex flexDir={"column"} w="100%" px={["9", '9', "9", "9", "9"]} mb="250px" >
+            <Flex flexDir={"column"} w="100%" px={["9", '9', "9", "9", "9"]} mb={["110px", "110px", "250px", "250px", "250px"]} >
                 <Text color="#111822" mb="10px" fontWeight={"600"} textAlign="center" fontSize={["27px", "27px", "36px", "36px", "36px"]} lineHeight={["32.2px", "32.2px", "43.2px", "43.2px", "43.2px"]} >Customers <span style={{ color: "#16D113" }} >Love</span> our Proxies</Text>
                 <Text color="#111822" opacity="0.5" fontWeight={"500"} w={["98%", "98%", "70%", "50%", "40%"]} textAlign="center" fontSize={["15px", "15px", "18px", "18px", "18px"]} m="auto" lineHeight={["15.2px", "15.2px", "21.2px", "21.2px", "21.2px"]} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
                 <SimpleGrid mt="34px" columns={[1, 1, 2, 2, 3]} spacing={["28px", "28px", "10px", "18px", "18px"]}  >
@@ -237,6 +239,49 @@ const LandingPage = () => {
                             )
                         })
                     }
+                </SimpleGrid>
+            </Flex>
+            {/* Blog Section */}
+            <Flex flexDir={"column"} w="100%" px={["0", '0', "9", "9", "9"]} justifyContent="center" mb="120px" >
+                <Text color="#111822" mb="10px" fontWeight={"600"} textAlign="center" fontSize={["24px", "24px", "36px", "36px", "36px"]} lineHeight={["32.2px", "32.2px", "43.2px", "43.2px", "43.2px"]} >Read our <span style={{ color: "#077BFF" }} >Exclusive</span> Blog</Text>
+                <Text color="#111822" opacity="0.5" fontWeight={"500"} w={["78%", "78%", "70%", "50%", "40%"]} textAlign="center" fontSize={["13px", "13px", "18px", "18px", "18px"]} m="auto" lineHeight={["15.2px", "15.2px", "21.2px", "21.2px", "21.2px"]} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
+                <Flex flexDir={"row"} mb="40px" mt="10px" justifyContent="center" alignItems={"center"} >
+                    <Text color="#077BFF" fontWeight={"500"} textAlign="center" mr="5px" fontSize={["15px", "15px", "18px", "18px", "18px"]} lineHeight={["15.2px", "15.2px", "21.2px", "21.2px", "21.2px"]} >Read All Blogs</Text>
+                    <Icon as={HiArrowNarrowRight} boxSize={4} color="#077BFF" />
+                </Flex>
+                {/* 6 blogs */}
+                <SimpleGrid px="40px" display={["none", "none", "grid", "grid", "grid"]} columns={[1, 1, 2, 2, 3]} rowGap={["38px", "38px", "38px", "38px", "38px"]} columnGap={["25px", "25px", "25px", "25px", "25px"]} >
+                    {
+                        blogArray.map(() => {
+                            return (
+                                <Flex flexDir={"column"} >
+                                    <Box mb="11px" h="221" w="100%" borderRadius={"5px"} bg="rgba(7, 123, 255, 0.1)" border={"1px solid rgba(7, 123, 255, 0.5)"} >
+
+                                    </Box>
+                                    <Text ml="1px" color="#111822" fontWeight={"500"} textAlign="left" fontSize={["13px", "13px", "20px", "20px", "20px"]} mb="1px" lineHeight={["15px", "15px", "25px", "25px", "25px"]} >Blog Title appear here</Text>
+                                    <Text ml="1px" opacity={"0.5"} color="#111822" fontWeight={"400"} textAlign="left" fontSize={["12px", "12px", "16px", "16px", "16px"]} mb="1px" lineHeight={["15px", "15px", "19px", "19px", "19px"]} >Category name here</Text>
+                                </Flex>
+                            )
+                        })
+                    }
+
+                </SimpleGrid>
+                {/* 4 blogs */}
+                <SimpleGrid px="40px" display={["grid", "grid", "none", "none", "none"]} columns={[2, 2, 2, 2, 3]} rowGap={["38px", "38px", "38px", "38px", "38px"]} columnGap={["10px", "10px", "25px", "25px", "25px"]} >
+                    {
+                        blogArray2.map(() => {
+                            return (
+                                <Flex flexDir={"column"} >
+                                    <Box mb="11px" h="150px" w="100%" borderRadius={"5px"} bg="rgba(7, 123, 255, 0.1)" border={"1px solid rgba(7, 123, 255, 0.5)"} >
+
+                                    </Box>
+                                    <Text ml="1px" color="#111822" fontWeight={"500"} textAlign="left" fontSize={["13px", "13px", "20px", "20px", "20px"]} mb="1px" lineHeight={["15px", "15px", "25px", "25px", "25px"]} >Blog Title appear here</Text>
+                                    <Text ml="1px" opacity={"0.5"} color="#111822" fontWeight={"400"} textAlign="left" fontSize={["12px", "12px", "16px", "16px", "16px"]} mb="1px" lineHeight={["15px", "15px", "19px", "19px", "19px"]} >Category name here</Text>
+                                </Flex>
+                            )
+                        })
+                    }
+
                 </SimpleGrid>
             </Flex>
         </Flex>
