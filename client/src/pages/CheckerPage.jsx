@@ -76,10 +76,10 @@ const CheckerPage = () => {
           </Table>
         </TableContainer>
         <Flex flexDir={"row"} justifyContent="center" alignItems={"center"} mt="40px" >
-          <Text fontSize={["14px", "14px", "18px", "18px", "18px"]} fontWeight="500" letterSpacing={"-0.02em"} lineHeight={"21.6px"} color="#111822">Check out our IPv6 Compatibility Checker</Text>
-          <Flex flexDir={"row"} justifyContent="center" alignItems={"center"} ml="15px" >
-            <Text color="#077BFF" fontWeight={"500"} mr="5px" letterSpacing={"-0.02em"} fontSize={["14px", "14px", "18px", "18px", "18px"]} lineHeight={["15.2px", "15.2px", "21.2px", "21.2px", "21.2px"]} >Veiw Tools</Text>
-            <Icon as={HiArrowNarrowRight} boxSize={4} color="#077BFF" />
+          <Text fontSize={["13px", "13px", "18px", "18px", "18px"]} fontWeight="500" letterSpacing={"-0.02em"} lineHeight={"21.6px"} color="#111822">Check out our IPv6 Compatibility Checker</Text>
+          <Flex flexDir={"row"} justifyContent="center" alignItems={"center"} ml={["10px","10px","15px","15px","15px"]} >
+            <Text color="#077BFF" fontWeight={"500"} mr={["2px","2px","5px","5px","5px"]} letterSpacing={"-0.02em"} fontSize={["13px", "13px", "18px", "18px", "18px"]} lineHeight={["15.2px", "15.2px", "21.2px", "21.2px", "21.2px"]} >Veiw Tools</Text>
+            <Icon as={HiArrowNarrowRight} boxSize={[3,3,4,4,4]} color="#077BFF" />
           </Flex>
         </Flex>
       </Flex>

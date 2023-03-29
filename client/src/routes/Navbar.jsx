@@ -43,8 +43,8 @@ const Navbar = () => {
                 </Flex>
                 {/* Third portion */}
                 <Flex>
-                    <Flex py="10px" px={["15px","15px","15px","22px","22px"]} cursor={"pointer"} flexDir={"row"} alignItems="center" justifyContent={"space-between"} onClick={() => handleNavigation("checker")} bg="#077BFF" borderRadius={"5px"} >
-                        <Text color={"#fff"} fontSize={["16px","16px","16px","16px","16px"]} fontWeight={"600"} lineHeight="19.2px">Get Started</Text>
+                    <Flex py="10px" px={["11px","11px","15px","22px","22px"]} cursor={"pointer"} flexDir={"row"} alignItems="center" justifyContent={"space-between"} onClick={() => handleNavigation("checker")} bg="#077BFF" borderRadius={"5px"} >
+                        <Text color={"#fff"} fontSize={["14px","14px","16px","16px","16px"]} fontWeight={"600"} lineHeight="19.2px">Get Started</Text>
                     </Flex>
 
                     {/* Hamburger */}

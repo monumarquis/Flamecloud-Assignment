@@ -15,7 +15,7 @@ const PricingSection = () => {
     return (
         <Flex flexDir={"column"} w={["100%", "100%", "90%", "70%", "57%"]} m="auto" py={["100px", "100px", "177px", "177px", "177px", "177px"]} >
             <Text data-aos="flip-left" color="#111822" mb="10px" fontWeight={"600"} textAlign="center" fontSize={["32px", "32px", "36px", "36px", "36px"]} lineHeight={["23.2px", "24.2px", "43.2px", "43.2px", "43.2px"]} >You choose, we <span style={{ color: "#077BFF" }} >Deliver!</span></Text>
-            <Text data-aos="flip-left" color="#111822" opacity="0.5" fontWeight={"500"} w={["85%", "85%", "70%", "62%", "62%"]} textAlign="center" fontSize={["15px", "15px", "18px", "18px", "18px"]} m="auto" lineHeight={"21.2px"} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
+            <Text data-aos="flip-left" color="#111822" opacity="0.5" fontWeight={"500"} w={["85%", "85%", "70%", "62%", "62%"]} textAlign="center" fontSize={["14px", "14px", "18px", "18px", "18px"]} m="auto" lineHeight={"21.2px"} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
             <Flex flexDir={["column", "column", "row", "row", "row"]} w="100%" alignItems={"stretch"} justifyContent={"space-between"} mt="99px" >
                 {/* Ist Pricing */}
                 <Flex data-aos="zoom-in" data-aos-delay="100" flexDirection={"column"} w={["70%", "70%", "49%", "49%", "49%"]} m="auto" mb={["50px", "50px", "0px", "0px", "0px"]} mt={["0px", "0px", "0px", "0px", "0px"]} h="477px" p={["23px", "23px", "27px", "27px", "27px"]} bg="rgba(30, 30, 30, 0.01)" border="1px solid rgba(30, 30, 30, 0.1)" borderRadius={"5px"} >
