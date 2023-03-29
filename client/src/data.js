@@ -7,6 +7,8 @@ import featuer6 from "./assets/feature/6.svg"
 import featuer7 from "./assets/feature/7.svg"
 import featuer8 from "./assets/feature/8.svg"
 
+
+// LandingPage data
 export const featureData = [
     {
         id: 1,
@@ -74,4 +76,27 @@ export const customerlove = [
         desc: "“Integer facilisis metus magna, non eleifend est ultricies sit amet. Aliquam vehicula, orci non hendrerit pretium, nibh ante auctor velit, quis convallis tor et tellus.”",
         title: "Random Text, ABC"
     },
+]
+
+// CheckerPage data
+export const tableData = [
+    {
+        ip: "8.8.8.8",
+        proxy: "192.168.0.0",
+        city: "New York",
+        country: "US"
+    },
+    {
+        ip: "1.1.1.1",
+        proxy: "192.168.0.0",
+        city: "Los Angeles",
+        country: "US"
+    },
+    {
+        ip: "192.168.1.1",
+        proxy: "192.168.0.0",
+        city: "San Diego",
+        country: "US"
+    },
+
 ]
