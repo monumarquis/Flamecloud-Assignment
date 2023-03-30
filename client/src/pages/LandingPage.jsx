@@ -23,7 +23,7 @@ const LandingPage = () => {
 
             {/* Top Section */}
             <LandingTopSection />
-            <SimpleGrid columns={[2, 2, 2, 3, 4]} spacing={["12.6px", "12.6px", "16.6px", "16.6px", "16.6px"]} mb="138.6px" px={["9", '9', "9", "9", "9"]} >
+            <SimpleGrid columns={[2, 2, 2, 3, 4]} spacing={["12.6px", "12.6px", "16.6px", "16.6px", "16.6px"]}  w="80%" m="auto" mb="138.6px" >
                 <Flex data-aos="zoom-in" data-aos-delay="100" py={["6px", "6px", "7px", "20px", "20px"]} bg="#EEFEFD" border={"1px solid #D4EAE8"} borderRadius="5px" justifyContent="center" alignItems="center"  >
                     <Flex py={["5px", "5px", "7px", "7px", "7px"]} w={["30px", "30px", "40px", "40px", "40px"]} background={"linear-gradient(135deg, #3BC9FB 0%, #42A6FB 100%)"} borderRadius="8px" justifyContent="center" alignItems={"center"}  >
                         <Image src={box} w={["55%", "55%", "70%", "70%", "70%"]} alt="" />
