@@ -21,13 +21,13 @@ const CheckerPage = () => {
   return (
     <Flex w="100%" flexDir={"column"}>
       {/* Ist section */}
-      <Flex data-aos="zoom-in-right" data-aos-delay="200" mt="40px" flexDir={"column"} pb="42px" w={["100%", "100%", "85%", "75%", "65%"]} m="auto" pt="95px" justifyContent="center" px={["5", '5', "9", "9", "9"]} >
+      <Flex data-aos="zoom-in-right" data-aos-delay="200" mt="40px" flexDir={"column"} pb="42px" w={["95%", "95%", "85%", "75%", "65%"]} m="auto" pt="95px" justifyContent="center" px={["5", '5', "9", "9", "9"]} >
         <Text fontWeight={"600"} fontSize={["13px", "13px", "16px", "16px", "16px"]} opacity="0.5" color={"#111822"} textAlign={"center"} >PROXY LOCATION CHECKER</Text>
-        <Text color="#111822" fontWeight={"600"} mb={["14px", "14px", "20px", "20px", "20px"]} fontSize={["28px", "28px", "46px", "56px", "56px"]} lineHeight={["35.2px", "35.2px", "57.2px", "67.2px", "67.2px"]} textAlign={"center"} >Check Locations of all your <span style={{ color: "#077BFF" }} >Proxies</span>  Free of Cost</Text>
-        <Text fontWeight={"600"} textAlign="center" w={["75%", "75%", "85%", "80%", "65%"]} m="auto" opacity="0.5" fontSize={["12px", "12px", "22px", "22px", "22px"]} color={"#111822"} lineHeight={["15.4px", "15.4px", "26.4px", "26.4px", "26.4px"]} >To Check location, enter the address or proxies you want to check (1 IP Per line)</Text>
+        <Text color="#111822" fontWeight={"600"} mb={["14px", "14px", "20px", "20px", "20px"]} fontSize={["26px", "26px", "46px", "56px", "56px"]} lineHeight={["35.2px", "35.2px", "57.2px", "67.2px", "67.2px"]} textAlign={"center"} >Check Locations of all your <span style={{ color: "#077BFF" }} >Proxies</span>  Free of Cost</Text>
+        <Text fontWeight={"600"} textAlign="center" w={["80%", "80%", "85%", "80%", "65%"]} m="auto" opacity="0.5" fontSize={["12px", "12px", "22px", "22px", "22px"]} color={"#111822"} lineHeight={["15.4px", "15.4px", "26.4px", "26.4px", "26.4px"]} >To Check location, enter the address or proxies you want to check (1 IP Per line)</Text>
       </Flex >
       {/* 2nd section */}
-      <Flex  flexDir={"column"} pb="42px" w={["100%", "100%", "85%", "75%", "60%"]} m="auto" pt="42px" justifyContent="center" px={["5", '5', "9", "9", "9"]} >
+      <Flex  flexDir={"column"} pb="42px" w={["95%", "95%", "85%", "75%", "60%"]} m="auto" pt="42px" justifyContent="center" px={["5", '5', "9", "9", "9"]} >
         <Flex data-aos="flip-right" mb="21px" flexDir={"column"} h="169px" p="19px" bg="rgba(217, 216, 214, 0.25)" border={"1px solid rgba(0, 0, 0, 0.25)"} borderRadius="5px" >
           <Text color="#111822" fontWeight={"500"} fontSize={["18px", "18px", "18px", "18px", "18px"]} lineHeight={["22px", "22px", "22px", "22px", "22px"]} >8.8.8.8</Text>
           <Text color="#111822" fontWeight={"500"} fontSize={["18px", "18px", "18px", "18px", "18px"]} lineHeight={["22px", "22px", "22px", "22px", "22px"]} >1.1.1.1</Text>

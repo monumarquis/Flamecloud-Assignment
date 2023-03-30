@@ -126,36 +126,36 @@ const PricingSection = () => {
                 </Flex>
             </Flex>
             {/* Third Pricing */}
-            <Flex data-aos="zoom-in" data-aos-delay="300" flexDir={"row"} justifyContent="space-between" w={["85%", "85%", "100%", "100%", "100%"]} m="auto" border="1px solid rgba(30, 30, 30, 0.1)" mt="22px" py="22px" pr={["12px", "12px", "123px", "123px", "123px"]} pl={["14px", "14px", "28px", "28px", "28px"]} borderRadius={"5px"} background={"rgba(30, 30, 30, 0.01)"}>
+            <Flex data-aos="zoom-in" data-aos-delay="300" flexDir={"row"} justifyContent="space-between" w={["85%", "85%", "100%", "100%", "100%"]} m="auto" border="1px solid rgba(30, 30, 30, 0.1)" mt="22px" py={["12px","12px","22px","22px","22px","22px"]} pr={["12px", "12px", "123px", "123px", "123px"]} pl={["14px", "14px", "28px", "28px", "28px"]} borderRadius={"5px"} background={"rgba(30, 30, 30, 0.01)"}>
                 <Flex flexDir={"column"} >
-                    <Image src={pricing3} mb="8px" w="40px" h="40px" />
-                    <Text color="#111822" mb="8px" fontWeight={"600"} textAlign="left" fontSize={["15px", "15px", "20px", "20px", "20px"]} lineHeight={"24px"} >Become a Reseller</Text>
-                    <Text color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.5"} fontSize={["12px", "12px", "16px", "16px", "16px"]} lineHeight={"19px"} >200+ Happy Resellers</Text>
+                    <Image src={pricing3} mb="8px" w={["30px","30px","40px","40px","40px","40px"]} h={["30px","30px","40px","40px","40px","40px"]} />
+                    <Text color="#111822" mb="8px" fontWeight={"600"} textAlign="left" fontSize={["13px", "13px", "20px", "20px", "20px"]} lineHeight={["18px","18px","24px","24px","24px"]} >Become a Reseller</Text>
+                    <Text color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.5"} fontSize={["11px", "11px", "16px", "16px", "16px"]} lineHeight={["14px","14px","19px","19px","19px"]} >200+ Happy Resellers</Text>
                 </Flex>
                 <Flex flexDir={"column"} >
                     <Text color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.5"} fontSize={["10px", "10px", "16px", "16px", "16px"]} lineHeight={"19px"} mb="10px" >Plan Includes :</Text>
                     <Flex flexDir={"row"} mb="8px" >
-                        <BsCheckLg fontSize={["8px", "18px", "12px", "12px", "12px"]} color="#077BFF" />
-                        <Text ml={["3px", "3px", "6px", "6px", "6px"]} color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["10px", "10px", "16px", "16px", "16px"]} lineHeight={"19px"} >Whitelabel IP Pool</Text>
+                        <BsCheckLg fontSize={["2px", "2px", "12px", "12px", "12px"]} color="#077BFF" />
+                        <Text ml={["1px", "1px", "6px", "6px", "6px"]} color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["10px", "10px", "16px", "16px", "16px"]} lineHeight={"19px"} >Whitelabel IP Pool</Text>
                     </Flex>
                     <Flex flexDir={"row"} mb="8px" >
-                        <BsCheckLg fontSize={["8px", "18px", "12px", "12px", "12px"]} color="#077BFF" />
-                        <Text ml={["3px", "3px", "6px", "6px", "6px"]} color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["10px", "10px", "16px", "16px", "16px"]} lineHeight={"19px"} >Whitelabel Subnets</Text>
+                        <BsCheckLg fontSize={["2px", "2px", "12px", "12px", "12px"]} color="#077BFF" />
+                        <Text ml={["1px", "1px", "6px", "6px", "6px"]} color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["10px", "10px", "16px", "16px", "16px"]} lineHeight={"19px"} >Whitelabel Subnets</Text>
                     </Flex>
                     <Flex flexDir={"row"} mb="8px" >
-                        <BsCheckLg fontSize={["8px", "18px", "12px", "12px", "12px"]} color="#077BFF" />
-                        <Text ml={["3px", "3px", "6px", "6px", "6px"]} color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["10px", "10px", "16px", "16px", "16px"]} lineHeight={"19px"} >Residential Proxy</Text>
+                        <BsCheckLg fontSize={["2px", "2px", "12px", "12px", "12px"]} color="#077BFF" />
+                        <Text ml={["1px", "1px", "6px", "6px", "6px"]} color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["10px", "10px", "16px", "16px", "16px"]} lineHeight={"19px"} >Residential Proxy</Text>
                     </Flex>
                 </Flex>
                 <Flex flexDir={"column"} >
                     <Text color="#111822" fontWeight={"400"} textAlign="left" opacity={"0"} fontSize={["10px", "10px", "16px", "16px", "16px"]} lineHeight={"19px"} mb="10px"  >Plan Includes :</Text>
                     <Flex flexDir={"row"} mb="8px" >
-                        <BsCheckLg fontSize={["8px", "18px", "12px", "12px", "12px"]} color="#077BFF" />
-                        <Text ml={["3px", "3px", "6px", "6px", "6px"]} color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["10px", "10px", "16px", "16px", "16px"]} lineHeight={"19px"} >Custom Bandwidth</Text>
+                        <BsCheckLg fontSize={["2px", "2px", "12px", "12px", "12px"]} color="#077BFF" />
+                        <Text ml={["1px", "1px", "6px", "6px", "6px"]} color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["10px", "10px", "16px", "16px", "16px"]} lineHeight={"19px"} >Custom Bandwidth</Text>
                     </Flex>
                     <Flex flexDir={"row"} mb="8px" >
-                        <BsCheckLg fontSize={["8px", "18px", "12px", "12px", "12px"]} color="#077BFF" />
-                        <Text ml={["3px", "3px", "6px", "6px", "6px"]} color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["10px", "10px", "16px", "16px", "16px"]} lineHeight={"19px"} >Priority Support</Text>
+                        <BsCheckLg fontSize={["2px", "2px", "12px", "12px", "12px"]} color="#077BFF" />
+                        <Text ml={["1px", "1px", "6px", "6px", "6px"]} color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["10px", "10px", "16px", "16px", "16px"]} lineHeight={"19px"} >Priority Support</Text>
                     </Flex>
                 </Flex>
             </Flex>

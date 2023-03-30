@@ -41,7 +41,7 @@ const BlogSection = () => {
                     blogArray2.map(() => {
                         return (
                             <Flex flexDir={"column"} >
-                                <Box mb="11px" h="150px" w="100%" borderRadius={"5px"} bg="rgba(7, 123, 255, 0.1)" border={"1px solid rgba(7, 123, 255, 0.5)"} >
+                                <Box mb="11px" h="130px" w="100%" borderRadius={"5px"} bg="rgba(7, 123, 255, 0.1)" border={"1px solid rgba(7, 123, 255, 0.5)"} >
 
                                 </Box>
                                 <Text ml="1px" color="#111822" fontWeight={"500"} textAlign="left" fontSize={["13px", "13px", "20px", "20px", "20px"]} mb="1px" lineHeight={["15px", "15px", "25px", "25px", "25px"]} >Blog Title appear here</Text>
