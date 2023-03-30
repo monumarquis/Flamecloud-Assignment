@@ -12,11 +12,11 @@ const Navbar = () => {
     }
     return (
         <Flex w="100%" pos="fixed" top="0" left="0" bg="#FFFFFF" zIndex={"1000"} >
-            <Flex w={"80%"} m="auto" flexDir={"row"} alignItems="center" justifyContent={"space-between"} borderBottom="1px solid #D9D8D6" py="20px" >
+            <Flex w={"80%"} m="auto" flexDir={"row"} alignItems="center" justifyContent={"space-between"} borderBottom={["0.2px solid #D9D8D6","0.2px solid #D9D8D6","1px solid #D9D8D6","1px solid #D9D8D6","1px solid #D9D8D6"]} pt={["20px","20px","20px","20px","20px"]} pb={["20px","20px","20px","20px","20px"]} >
                 {/* Ist Portion */}
                 <Flex flexDir={"row"} onClick={() => handleNavigation("")} cursor="pointer" >
-                    <Image src={Logo} alt="Logo" mr="8.76px" />
-                    <Text color={"#111822"} fontSize={["16px", "16px", "20px", "20px", "20px"]} fontWeight={"600"} lineHeight="31px" >CreativeProxies</Text>
+                    <Image src={Logo} alt="Logo" mr={["5.76px","5.76px","8.76px","8.76px","8.76px"]} />
+                    <Text color={"#111822"} fontSize={["20px", "20px", "20px", "20px", "20px"]} fontWeight={"600"} lineHeight="31px" >CreativeProxies</Text>
                 </Flex>
 
                 {/* 2nd Portion */}
@@ -43,13 +43,13 @@ const Navbar = () => {
                 </Flex>
                 {/* Third portion */}
                 <Flex>
-                    <Flex py="10px" px={["11px", "11px", "15px", "22px", "22px"]} cursor={"pointer"} flexDir={"row"} alignItems="center" justifyContent={"space-between"} onClick={() => handleNavigation("checker")} bg="#077BFF" borderRadius={"5px"} >
-                        <Text color={"#fff"} fontSize={["15px", "15px", "16px", "16px", "15px"]} fontWeight={"600"} lineHeight="19.2px">Get Started</Text>
+                    <Flex py="6px" px={["13px", "13px", "15px", "22px", "22px"]} cursor={"pointer"} flexDir={"row"} alignItems="center" justifyContent={"space-between"} onClick={() => handleNavigation("checker")} bg="#077BFF" borderRadius={"5px"} >
+                        <Text color={"#fff"} fontSize={["13px", "13px", "16px", "16px", "15px"]} fontWeight={"600"} lineHeight="19.2px">Get Started</Text>
                     </Flex>
 
                     {/* Hamburger */}
-                    <Flex ml="10px" display={["flex", "flex", "flex", "none", "none"]} flexDir={"row"} alignItems="center" justifyContent={"space-between"} bg="rgba(7, 123, 255, 0.25)" px="15px" py="7px" borderRadius={"8.52px"} >
-                        <GiHamburgerMenu color='#077BFF' fontSize={"25px"} m="0" />
+                    <Flex ml="6px" display={["flex", "flex", "flex", "none", "none"]} flexDir={"row"} alignItems="center" justifyContent={"space-between"} bg="rgba(7, 123, 255, 0.25)" px="8px" py="6px" borderRadius={"5px"} >
+                        <GiHamburgerMenu color='#077BFF' fontSize={"18px"} m="0" />
                     </Flex>
                 </Flex>
             </Flex>
