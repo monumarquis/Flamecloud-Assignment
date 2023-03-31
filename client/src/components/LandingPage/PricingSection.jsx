@@ -14,7 +14,7 @@ const PricingSection = () => {
     }, [])
     return (
         <Flex flexDir={"column"} w={["100%", "100%", "90%", "70%", "57%"]} m="auto" py={["100px", "100px", "177px", "177px", "177px", "177px"]} >
-            <Text data-aos="flip-left" color="#111822" mb={["15px", "15px", "19px", "19px", "19px"]} fontWeight={"600"} textAlign="center" fontSize={["26px", "26px", "36px", "36px", "36px"]} lineHeight={["21.2px", "24.2px", "43.2px", "43.2px", "43.2px"]} >You choose, we <span style={{ color: "#077BFF" }} >Deliver!</span></Text>
+            <Text data-aos="flip-left" w={["80%", "80%", "70%", "50%", "80%"]} color="#111822" m="auto" mb={["15px", "15px", "19px", "19px", "19px"]} fontWeight={"600"} textAlign="center" fontSize={["24px", "24px", "36px", "36px", "36px"]} lineHeight={["21.2px", "24.2px", "43.2px", "43.2px", "43.2px"]}  >You choose, we <span style={{ color: "#077BFF" }} >Deliver!</span></Text>
             <Text data-aos="flip-left" color="#111822" opacity="0.5" fontWeight={"500"} w={["78%", "78%", "70%", "62%", "62%"]} textAlign="center" fontSize={["13px", "13px", "18px", "18px", "18px"]} m="auto" lineHeight={["16.2px", "16.2px", "21.2px", "21.2px", "21.2px"]} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
             <Flex flexDir={["column", "column", "row", "row", "row"]} w="100%" alignItems={"stretch"} mt={["29px", "29px", "99px", "99px", "99px"]} >
                 {/* Ist Pricing */}
@@ -22,15 +22,15 @@ const PricingSection = () => {
                     {/* Top Section */}
                     <Flex flexDir={"row"} justifyContent="space-between" mb="20px" >
                         <Flex flexDir={"column"}  >
-                            <Image src={pricing1} mb="8px" w="40px" h="40px" />
-                            <Text color="#111822" mb="8px" fontWeight={"600"} textAlign="left" fontSize={["18px", "18px", "20px", "20px", "20px"]} lineHeight={"24px"} >IPv4 Proxies</Text>
-                            <Text color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.5"} fontSize={["15px", "15px", "16px", "16px", "16px"]} lineHeight={"19px"} >Static/Rotating</Text>
+                            <Image src={pricing1} mb={["0px", "0px", "8px", "8px", "8px"]} w={["30px", "30px", "40px", "40px", "40px"]} h={["30px", "30px", "40px", "40px", "40px"]} />
+                            <Text color="#111822" mb={["0px", "0px", "8px", "8px", "8px"]} fontWeight={"600"} textAlign="left" fontSize={["14px", "14px", "20px", "20px", "20px"]} lineHeight={"24px"} >IPv4 Proxies</Text>
+                            <Text color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.5"} fontSize={["13px", "13px", "16px", "16px", "16px"]} lineHeight={"19px"} >Static/Rotating</Text>
                         </Flex>
                         <Flex flexDir={"column"}>
                             <Text color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["12px", "12px", "16px", "16px", "16px"]} lineHeight={["15px", "15px", "19px", "19px", "19px"]} >FROM</Text>
-                            <Text fontWeight={"500"} mb="4px" textAlign="left" fontSize={["15px", "15px", "20px", "20px", "20px"]} color="#077BFF" lineHeight={["18px", "18px", "24px", "24px", "24px"]} >$4.75<span style={{ color: "#111822", opacity: "0.75" }} >/day</span></Text>
-                            <Text fontWeight={"600"} opacity="0.8" textAlign="left" fontSize={["10px", "10px", "12px", "12px", "12px"]} color="#111822" lineHeight={["10.4px", "10.4px", "14.4px", "14.4px", "14.4px"]} >OR</Text>
-                            <Text fontWeight={"500"} textAlign="left" fontSize={["15px", "15px", "20px", "20px", "20px"]} color="#077BFF" lineHeight={["18px", "18px", "24px", "24px", "24px"]} >$116.75<span style={{ color: "#111822", opacity: "0.75" }} >/mo</span></Text>
+                            <Text fontWeight={"500"} mb="4px" textAlign="left" fontSize={["13px", "13px", "20px", "20px", "20px"]} color="#077BFF" lineHeight={["18px", "18px", "24px", "24px", "24px"]} >$4.75<span style={{ color: "#111822", opacity: "0.75" }} >/day</span></Text>
+                            <Text fontWeight={"600"} opacity="0.8" textAlign="left" fontSize={["8px", "8px", "12px", "12px", "12px"]} color="#111822" lineHeight={["10.4px", "10.4px", "14.4px", "14.4px", "14.4px"]} >OR</Text>
+                            <Text fontWeight={"500"} textAlign="left" fontSize={["13px", "13px", "20px", "20px", "20px"]} color="#077BFF" lineHeight={["18px", "18px", "24px", "24px", "24px"]} >$116.75<span style={{ color: "#111822", opacity: "0.75" }} >/mo</span></Text>
                         </Flex>
 
                     </Flex>
@@ -73,38 +73,38 @@ const PricingSection = () => {
                     </Flex>
                     <Flex flexDir={"row"} justifyContent="space-between" mb="20px" >
                         <Flex flexDir={"column"}  >
-                            <Image src={pricing2} mb="8px" w="40px" h="40px" />
-                            <Text color="#111822" mb="8px" fontWeight={"600"} textAlign="left" fontSize={["18px", "18px", "20px", "20px", "20px"]} lineHeight={"24px"} >IPv4 Proxies</Text>
-                            <Text color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.5"} fontSize={["15px", "15px", "16px", "16px", "16px"]} lineHeight={"19px"} >Static/Rotating</Text>
+                            <Image src={pricing2} mb={["0px", "0px", "8px", "8px", "8px"]} w={["30px", "30px", "40px", "40px", "40px"]} h={["30px", "30px", "40px", "40px", "40px"]} />
+                            <Text color="#111822" mb={["0px", "0px", "8px", "8px", "8px"]} fontWeight={"600"} textAlign="left" fontSize={["14px", "14px", "20px", "20px", "20px"]} lineHeight={"24px"} >IPv4 Proxies</Text>
+                            <Text color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.5"} fontSize={["13px", "13px", "16px", "16px", "16px"]} lineHeight={"19px"} >Static/Rotating</Text>
                         </Flex>
                         <Flex flexDir={"column"}>
                             <Text color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["12px", "12px", "16px", "16px", "16px"]} lineHeight={["15px", "15px", "19px", "19px", "19px"]} >FROM</Text>
-                            <Text fontWeight={"500"} mb="4px" textAlign="left" fontSize={["15px", "15px", "20px", "20px", "20px"]} color="#16D113" lineHeight={["18px", "18px", "24px", "24px", "24px"]} >$4.75<span style={{ color: "#111822", opacity: "0.75" }} >/day</span></Text>
-                            <Text fontWeight={"600"} opacity="0.8" textAlign="left" fontSize={["10px", "10px", "12px", "12px", "12px"]} color="#111822" lineHeight={["10.4px", "10.4px", "14.4px", "14.4px", "14.4px"]} >OR</Text>
-                            <Text fontWeight={"500"} textAlign="left" fontSize={["15px", "15px", "20px", "20px", "20px"]} color="#16D113" lineHeight={["18px", "18px", "24px", "24px", "24px"]} >$116.75<span style={{ color: "#111822", opacity: "0.75" }} >/mo</span></Text>
+                            <Text fontWeight={"500"} mb="4px" textAlign="left" fontSize={["13px", "13px", "20px", "20px", "20px"]} color="#16D113" lineHeight={["18px", "18px", "24px", "24px", "24px"]} >$4.75<span style={{ color: "#111822", opacity: "0.75" }} >/day</span></Text>
+                            <Text fontWeight={"600"} opacity="0.8" textAlign="left" fontSize={["8px", "8px", "12px", "12px", "12px"]} color="#111822" lineHeight={["10.4px", "10.4px", "14.4px", "14.4px", "14.4px"]} >OR</Text>
+                            <Text fontWeight={"500"} textAlign="left" fontSize={["13px", "13px", "20px", "20px", "20px"]} color="#16D113" lineHeight={["18px", "18px", "24px", "24px", "24px"]} >$116.75<span style={{ color: "#111822", opacity: "0.75" }} >/mo</span></Text>
                         </Flex>
 
                     </Flex>
                     {/* Botttom section */}
                     <Text color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.5"} fontSize={["13px", "13px", "16px", "16px", "16px"]} lineHeight={"19px"} mb="10px" >Plan Includes :</Text>
                     <Flex flexDir={"row"} mb={["3px", "3px", "8px", "8px", "8px"]} >
-                        <BsCheckLg color="#16D113" />
+                        <BsCheckLg color="#077BFF" />
                         <Text ml="6px" color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["13px", "13px", "16px", "16px", "16px"]} lineHeight={"19px"} >100 Threads</Text>
                     </Flex>
                     <Flex flexDir={"row"} mb={["3px", "3px", "8px", "8px", "8px"]} >
-                        <BsCheckLg color="#16D113" />
+                        <BsCheckLg color="#077BFF" />
                         <Text ml="6px" color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["13px", "13px", "16px", "16px", "16px"]} lineHeight={"19px"} >Dedicated IP Pool</Text>
                     </Flex>
                     <Flex flexDir={"row"} mb={["3px", "3px", "8px", "8px", "8px"]} >
-                        <BsCheckLg color="#16D113" />
+                        <BsCheckLg color="#077BFF" />
                         <Text ml="6px" color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["13px", "13px", "16px", "16px", "16px"]} lineHeight={"19px"} >Residential Proxy</Text>
                     </Flex>
                     <Flex flexDir={"row"} mb={["3px", "3px", "8px", "8px", "8px"]} >
-                        <BsCheckLg color="#16D113" />
+                        <BsCheckLg color="#077BFF" />
                         <Text ml="6px" color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["13px", "13px", "16px", "16px", "16px"]} lineHeight={"19px"} >Unlimited Bandwidth</Text>
                     </Flex>
                     <Flex flexDir={"row"} mb={["3px", "3px", "8px", "8px", "8px"]} >
-                        <BsCheckLg color="#16D113" />
+                        <BsCheckLg color="#077BFF" />
                         <Text ml="6px" color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["13px", "13px", "16px", "16px", "16px"]} lineHeight={"19px"} >Worldwide Locations</Text>
                     </Flex>
                     <Flex flexDir={"row"} mb={["3px", "3px", "8px", "8px", "8px"]} >

@@ -26,7 +26,7 @@ const Footer = () => {
                         <Flex bg="rgba(88, 101, 242, 0.1)" border="1px solid #5865F2" w="100%" alignItems={"center"} justifyContent="center" borderRadius={"10px"} >
                             <Flex flexDir={"row"} alignItems="center" p={["8px 4.8px", "8px 4.8px", "15px 40px", "12.5px 4.8px", "12.5px 4.8px"]}  >
                                 <Image src={Discord} alt="Logo" mr="6px" />
-                                <Text color={"#5865F2"} fontSize={["13px", "13px", "16px", "16px", "16px"]} fontWeight={"500"} lineHeight="19px" >Join Our Discord</Text>
+                                <Text color={"#5865F2"} fontSize={["11px", "11px", "16px", "16px", "16px"]} fontWeight={"500"} lineHeight="19px" >Join Our Discord</Text>
                             </Flex>
                         </Flex>
                     </Flex>

@@ -10,8 +10,8 @@ const FeatureSection = () => {
     }, [])
     return (
         <Flex flexDir={"column"} w="100%"  bg="#0566D4" py={["70px","70px","115px","115px","115px"]} justifyContent={"center"} alignItems="center" >
-            <Text data-aos="flip-left" color="#FFFFFF" mb="10px" fontWeight={"600"} textAlign="center" fontSize={["19px", "19px", "36px", "36px", "36px"]} lineHeight={["23.2px", "24.2px", "43.2px", "43.2px", "43.2px"]} >Why we are the Best Proxy Providers</Text>
-            <Text data-aos="flip-left" color="#FFFFFF" mb="30px" fontWeight={"500"} w={["80%", "80%", "70%", "50%", "40%"]} textAlign="center" fontSize={["13px", "13px", "18px", "18px", "18px"]} lineHeight={["16.2px","16.2px","21.2px","21.2px","21.2px"]} opacity="0.5" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
+            <Text data-aos="flip-left" color="#FFFFFF"  fontWeight={"600"} w={["80%", "80%", "70%", "50%", "80%"]} textAlign="center" fontSize={["19px", "19px", "36px", "36px", "36px"]} lineHeight={["23.2px", "24.2px", "43.2px", "43.2px", "43.2px"]} m="auto" mb="10px" >Why we are the Best Proxy Providers</Text>
+            <Text data-aos="flip-left" color="#FFFFFF" mb="30px" fontWeight={"500"} w={["80%", "80%", "70%", "50%", "35%"]} textAlign="center" fontSize={["13px", "13px", "18px", "18px", "18px"]} lineHeight={["16.2px","16.2px","21.2px","21.2px","21.2px"]} opacity="0.5" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
 
             <SimpleGrid columns={["2", "2", "3", "3", "4"]} w={["80%", "80%", "80%", "80%", "80%"]} spacing={["10px", "10px", "16px", "16px", "16px"]} m="auto" >
 

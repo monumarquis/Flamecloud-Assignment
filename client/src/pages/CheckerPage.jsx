@@ -29,9 +29,9 @@ const CheckerPage = () => {
       {/* 2nd section */}
       <Flex flexDir={"column"} pb="42px" w={["80%", "80%", "85%", "75%", "60%"]} m="auto" pt={["20px","20px","42px","42px","42px"]} justifyContent="center"  >
         <Flex data-aos="flip-right" mb="21px" flexDir={"column"} h={["139px","139px","169px","169px","169px"]} p="19px" bg="rgba(217, 216, 214, 0.25)" border={"1px solid rgba(0, 0, 0, 0.25)"} borderRadius="5px" >
-          <Text color="#111822" fontWeight={"500"} fontSize={["18px", "18px", "18px", "18px", "18px"]} lineHeight={["22px", "22px", "22px", "22px", "22px"]} >8.8.8.8</Text>
-          <Text color="#111822" fontWeight={"500"} fontSize={["18px", "18px", "18px", "18px", "18px"]} lineHeight={["22px", "22px", "22px", "22px", "22px"]} >1.1.1.1</Text>
-          <Text color="#111822" fontWeight={"500"} fontSize={["18px", "18px", "18px", "18px", "18px"]} lineHeight={["22px", "22px", "22px", "22px", "22px"]} >192.168.1.1</Text>
+          <Text color="#111822" fontWeight={"500"} fontSize={["14px", "14px", "18px", "18px", "18px"]} lineHeight={["22px", "22px", "22px", "22px", "22px"]} >8.8.8.8</Text>
+          <Text color="#111822" fontWeight={"500"} fontSize={["14px", "14px", "18px", "18px", "18px"]} lineHeight={["22px", "22px", "22px", "22px", "22px"]} >1.1.1.1</Text>
+          <Text color="#111822" fontWeight={"500"} fontSize={["14px", "14px", "18px", "18px", "18px"]} lineHeight={["22px", "22px", "22px", "22px", "22px"]} >192.168.1.1</Text>
         </Flex>
         <Flex data-aos="flip-right" flexDir={["column", "column", "row", "row", "row"]} justifyContent="space-between" mb={["5px","5px","51px","51px","51px"]}   >
           <Flex borderRadius={"5px"} w={"200px"} bg="#077BFF" alignItems={"center"} justifyContent="center" py="10px" mb={["10px", "10px", "0px", "0px", "0px"]} >
