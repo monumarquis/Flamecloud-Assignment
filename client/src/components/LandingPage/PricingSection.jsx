@@ -18,7 +18,7 @@ const PricingSection = () => {
             <Text data-aos="flip-left" color="#111822" opacity="0.5" fontWeight={"500"} w={["78%", "78%", "70%", "62%", "62%"]} textAlign="center" fontSize={["13px", "13px", "18px", "18px", "18px"]} m="auto" lineHeight={["16.2px", "16.2px", "21.2px", "21.2px", "21.2px"]} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
             <Flex flexDir={["column", "column", "row", "row", "row"]} w="100%" alignItems={"stretch"} mt={["29px", "29px", "99px", "99px", "99px"]} >
                 {/* Ist Pricing */}
-                <Flex data-aos="zoom-in" data-aos-delay="100" flexDirection={"column"} w={["65%", "65%", "49%", "45%", "45%"]} m="auto" mb={["50px", "50px", "0px", "0px", "0px"]} mt={["0px", "0px", "0px", "0px", "0px"]} h={["400px", "400px", "477px", "477px", "477px"]} p={["21px", "23px", "27px", "27px", "27px"]} bg="rgba(30, 30, 30, 0.01)" border="1px solid rgba(30, 30, 30, 0.1)" borderRadius={"5px"} >
+                <Flex data-aos="zoom-in" data-aos-delay="100" flexDirection={"column"} w={["65%", "65%", "49%", "45%", "45%"]} m="auto" mb={["50px", "50px", "0px", "0px", "0px"]} mt={["0px", "0px", "0px", "0px", "0px"]} h={["370px", "370px", "477px", "477px", "477px"]} p={["21px", "23px", "27px", "27px", "27px"]} bg="rgba(30, 30, 30, 0.01)" border="1px solid rgba(30, 30, 30, 0.1)" borderRadius={"5px"} >
                     {/* Top Section */}
                     <Flex flexDir={"row"} justifyContent="space-between" mb="20px" >
                         <Flex flexDir={"column"}  >
@@ -60,13 +60,13 @@ const PricingSection = () => {
                         <BsCheckLg color="#077BFF" />
                         <Text ml="6px" color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["13px", "13px", "16px", "16px", "16px"]} lineHeight={"19px"} >40 GBps</Text>
                     </Flex>
-                    <Flex flexDir={"row"} w={"97.5%"} m="auto" bg="#077BFF" justifyContent={"center"} py="12.5px" alignItems={"center"} borderRadius={"10px"} mt="20px"  >
+                    <Flex flexDir={"row"} w={"97.5%"} m="auto" bg="#077BFF" justifyContent={"center"} py="12.5px" alignItems={"center"} borderRadius={"10px"} mt="20px" boxShadow={"0px 6px 0px #0566D5"} >
                         <Text fontWeight={"600"} fontSize={["14px", "14px", "18px", "18px", "18px"]} color={"#fff"} mr="5px" lineHeight={"22px"} >View Pricing</Text>
                         <RiArrowRightLine color="#fff" fontWeight={"600"} fontSize={["18px", "18px", "25px", "25px", "25px"]} />
                     </Flex>
                 </Flex>
                 {/* 2nd Pricing */}
-                <Flex data-aos="zoom-in" data-aos-delay="200" pos="relative" flexDirection={"column"} w={["65%", "65%", "49%", "49%", "49%"]} m="auto" p={["23px", "23px", "27px", "27px", "27px"]} bg="rgba(22, 209, 19, 0.1)" h={["445px", "445px", "525px", "525px", "525px"]} border="1px solid #16D113" borderRadius={"5px"} >
+                <Flex data-aos="zoom-in" data-aos-delay="200" pos="relative" flexDirection={"column"} w={["65%", "65%", "49%", "49%", "49%"]} m="auto" p={["23px", "23px", "27px", "27px", "27px"]} bg="rgba(22, 209, 19, 0.1)" h={["415px", "415px", "525px", "525px", "535px"]} border="1px solid #16D113" borderRadius={"5px"} >
                     {/* Top Section */}
                     <Flex justifyContent={"center"} alignItems="center" color="#FFFFFF" py="2px" px="4px" bg="#16D113" borderRadius={"2px"} pos="absolute" top="-12px" fontSize="12px" left={["15px", "15px", "20px", "20px", "25px"]} >
                         BEST SELLER
@@ -119,7 +119,7 @@ const PricingSection = () => {
                         <BsCheckLg color="#16D113" />
                         <Text ml="6px" color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["13px", "13px", "16px", "16px", "16px"]} lineHeight={"19px"} >Septiltion per Location</Text>
                     </Flex>
-                    <Flex flexDir={"row"} w={"97.5%"} m="auto" bg="#16D113" justifyContent={"center"} py="12.5px" alignItems={"center"} borderRadius={"10px"} mt="20px"  >
+                    <Flex flexDir={"row"} w={"97.5%"} m="auto" bg="#16D113" justifyContent={"center"} py="12.5px" alignItems={"center"} borderRadius={"10px"} mt="20px" boxShadow={"0px 6px 0px #0EB726"}  >
                         <Text fontWeight={"600"} fontSize={["14px", "14px", "18px", "18px", "18px"]} color={"#fff"} mr="5px" lineHeight={"22px"} >View Pricing</Text>
                         <RiArrowRightLine color="#fff" fontWeight={"600"} fontSize={["18px", "18px", "25px", "25px", "25px"]} />
                     </Flex>
@@ -148,7 +148,7 @@ const PricingSection = () => {
                     </Flex>
                 </Flex>
                 <Flex flexDir={"column"} >
-                    <Text color="#111822" fontWeight={"400"} textAlign="left" opacity={"0"} fontSize={["10px", "10px", "16px", "16px", "16px"]} lineHeight={"19px"} mb="10px"  >Plan Includes :</Text>
+                    <Text color="#111822" fontWeight={"400"} textAlign="left" opacity={"0"} fontSize={["10px", "10px", "16px", "16px", "16px"]}  lineHeight={"19px"} mb={["2px", "2px", "10px", "10px", "10px"]} ml="4px"  >Plan Includes :</Text>
                     <Flex flexDir={"row"} mb={["0px", "0px", "8px", "8px", "8px"]} >
                         <BsCheckLg fontSize={["0px", "0px", "12px", "12px", "12px"]} color="#077BFF" />
                         <Text ml={["1px", "1px", "6px", "6px", "6px"]} color="#111822" fontWeight={"400"} textAlign="left" opacity={"0.8"} fontSize={["10px", "10px", "16px", "16px", "16px"]} lineHeight={"19px"} >Custom Bandwidth</Text>
