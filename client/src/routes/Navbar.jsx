@@ -43,8 +43,8 @@ const Navbar = () => {
                 </Flex>
                 {/* Third portion */}
                 <Flex>
-                    <Flex py={["10px","10px","6px","6px","12px"]} px={["12px", "12px", "15px", "22px", "22px"]} cursor={"pointer"} flexDir={"row"} alignItems="center" justifyContent={"space-between"} onClick={() => handleNavigation("checker")} bg="#077BFF" borderRadius={"7px"}  >
-                        <Text color={"#fff"} fontSize={["13px", "13px", "16px", "16px", "17px"]} fontWeight={["400", "400", "600", "600", "600"]} lineHeight={["15.2px", "15.2px", "19.2px", "19.2px", "19.2px"]}>Get Started</Text>
+                    <Flex py={["10px","10px","6px","6px","12px"]} px={["12px", "12px", "15px", "22px", "22px"]} cursor={"pointer"} flexDir={"row"} alignItems="center" justifyContent={"space-between"}  className='Nav_button' onClick={() => handleNavigation("checker")} bg="#077BFF" borderRadius={"7px"}  >
+                        <Text color={"#fff"} fontSize={["13px", "13px", "16px", "16px", "17px"]} fontWeight={["400", "400", "600", "600", "600"]} lineHeight={["15.2px", "15.2px", "19.2px", "19.2px", "19.2px"]} className='Nav_button_text' >Get Started</Text>
                     </Flex>
 
                     {/* Hamburger */}

@@ -9,6 +9,22 @@ body {
 
 
 .background {
-  bbackground: rgb(0,182,122);
-  background: linear-gradient(90deg, rgba(0,182,122,1) 0%, rgba(0,182,122,1) 54%, rgba(220,220,230,1) 54%, rgba(220,220,230,1) 100%);
+  background: rgb(0, 182, 122);
+  background: linear-gradient(90deg, rgba(0, 182, 122, 1) 0%, rgba(0, 182, 122, 1) 54%, rgba(220, 220, 230, 1) 54%, rgba(220, 220, 230, 1) 100%);
+}
+
+/* Mobile Small Screen  */
+@media screen and (max-width: 320px) {
+  .Nav_button_text {
+    font-size: 10px !important;
+  }
+
+  .Nav_button {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    margin-right: -3px !important;
+    border-radius: 4px !important;
+  }
 }
